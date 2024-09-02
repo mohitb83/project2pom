@@ -36,8 +36,8 @@
 			<artifactId>extentreports</artifactId>
 		</dependency>
 	</dependencies>
-	<build> 
-	<plugins>
+	<build>
+		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
@@ -48,7 +48,7 @@
 				</configuration>
 			</plugin>
 		</plugins>
-		</build>
+	</build>
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
@@ -81,6 +81,15 @@
 				<artifactId>extentreports</artifactId>
 				<version>5.1.2</version>
 			</dependency>
+			<dependency>
+    <groupId>net.sourceforge.tess4j</groupId>
+    <artifactId>tess4j</artifactId>
+    <version>5.13.0</version>
+</dependency>
+
+
+
+
 		</dependencies>
 	</dependencyManagement>
 </project>

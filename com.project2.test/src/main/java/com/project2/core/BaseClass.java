@@ -39,9 +39,8 @@ public class BaseClass {
 			drv = new ChromeDriver(opts);
 			drv.manage().deleteAllCookies();
 			drv.manage().window().maximize();
-			drv.get(prop.getProperty("url"));
-			drv.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(5));
-			drv.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+//			drv.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(5));
+//			drv.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		}
 		else if(browserName.equals(prop.getProperty("browser2"))) {
 			FirefoxOptions opts = new FirefoxOptions();
@@ -49,9 +48,9 @@ public class BaseClass {
 			drv = new FirefoxDriver(opts);
 			drv.manage().deleteAllCookies();
 			drv.manage().window().maximize();
-			drv.get(prop.getProperty("url"));
-			drv.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(5));
-			drv.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+//			drv.get(prop.getProperty("url"));
+//			drv.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(5));
+//			drv.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		}
 		else if (browserName.equals(prop.getProperty("browser2"))) {
 			EdgeOptions opts = new EdgeOptions();
@@ -59,9 +58,9 @@ public class BaseClass {
 			drv = new EdgeDriver(opts);
 			drv.manage().deleteAllCookies();
 			drv.manage().window().maximize();
-			drv.get(prop.getProperty("url"));
-			drv.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(5));
-			drv.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+//			drv.get(prop.getProperty("url"));
+//			drv.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(5));
+//			drv.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		} else {
 			System.out.println("No browser found");
 		}
