@@ -2,35 +2,47 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-02T17:20:10 IST" name="Default suite" finished-at="2024-09-02T17:21:38 IST" duration-ms="87128">
+  <suite started-at="2024-09-03T12:15:52 IST" name="Default suite" finished-at="2024-09-03T12:17:31 IST" duration-ms="98986">
     <groups>
     </groups>
-    <test started-at="2024-09-02T17:20:10 IST" name="Default test" finished-at="2024-09-02T17:21:38 IST" duration-ms="87128">
+    <test started-at="2024-09-03T12:15:52 IST" name="Default test" finished-at="2024-09-03T12:17:31 IST" duration-ms="98986">
       <class name="com.project2.test.LoginPageTest">
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.project2.test.LoginPageTest@4c12331b]" started-at="2024-09-02T17:20:10 IST" name="launchBrowser" finished-at="2024-09-02T17:20:15 IST" duration-ms="5027" status="PASS">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.project2.test.LoginPageTest@dd05255]" started-at="2024-09-03T12:15:52 IST" name="launchBrowser" finished-at="2024-09-03T12:15:58 IST" duration-ms="5786" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method signature="launchApp()[pri:0, instance:com.project2.test.LoginPageTest@4c12331b]" started-at="2024-09-02T17:20:16 IST" name="launchApp" finished-at="2024-09-02T17:21:36 IST" duration-ms="80848" status="FAIL">
+        <test-method signature="launchApp(java.lang.String,java.lang.String)[pri:0, instance:com.project2.test.LoginPageTest@dd05255]" started-at="2024-09-03T12:15:58 IST" name="launchApp" data-provider="dataFeed" finished-at="2024-09-03T12:17:30 IST" duration-ms="92558" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[henry@chapsmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Pass@1234]]>
+              </value>
+            </param>
+          </params>
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
               <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //h2[contains(text(), 'Super Admin')] (tried for 20 second(s) with 500 milliseconds interval)
 Build info: version: '4.23.1', revision: '656257d8e9'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 128.0.6613.86, chrome: {chromedriverVersion: 128.0.6613.86 (3045ed680fda..., userDataDir: C:\Users\baluj\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50311}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50311/devtoo..., se:cdpVersion: 128.0.6613.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: a89c8782e78362091944e775c319808d]]>
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 128.0.6613.114, chrome: {chromedriverVersion: 128.0.6613.119 (6e439cfca4d..., userDataDir: C:\Users\baluj\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57987}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57987/devtoo..., se:cdpVersion: 128.0.6613.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e097e89bdc7119b73d74a86fc06e4200]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //h2[contains(text(), 'Super Admin')] (tried for 20 second(s) with 500 milliseconds interval)
 Build info: version: '4.23.1', revision: '656257d8e9'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 128.0.6613.86, chrome: {chromedriverVersion: 128.0.6613.86 (3045ed680fda..., userDataDir: C:\Users\baluj\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50311}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50311/devtoo..., se:cdpVersion: 128.0.6613.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: a89c8782e78362091944e775c319808d
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 128.0.6613.114, chrome: {chromedriverVersion: 128.0.6613.119 (6e439cfca4d..., userDataDir: C:\Users\baluj\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57987}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57987/devtoo..., se:cdpVersion: 128.0.6613.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e097e89bdc7119b73d74a86fc06e4200
 at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at com.project2.test.LoginPageTest.launchApp(LoginPageTest.java:36)
+at com.project2.test.LoginPageTest.launchApp(LoginPageTest.java:37)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -65,7 +77,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApp -->
-        <test-method is-config="true" signature="quit()[pri:0, instance:com.project2.test.LoginPageTest@4c12331b]" started-at="2024-09-02T17:21:36 IST" name="quit" finished-at="2024-09-02T17:21:38 IST" duration-ms="1116" status="PASS">
+        <test-method is-config="true" signature="quit()[pri:0, instance:com.project2.test.LoginPageTest@dd05255]" started-at="2024-09-03T12:17:30 IST" name="quit" finished-at="2024-09-03T12:17:31 IST" duration-ms="414" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
