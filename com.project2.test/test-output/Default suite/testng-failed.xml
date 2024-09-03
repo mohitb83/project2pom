@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.project2.test.LoginPageTest">
+      <class name="testDriven.LoginPageTest">
         <methods>
-          <include name="launchApp" invocation-numbers="0"/>
+          <include name="loginfn2"/>
           <include name="launchBrowser"/>
           <include name="quit"/>
         </methods>
-      </class> <!-- com.project2.test.LoginPageTest -->
+      </class> <!-- testDriven.LoginPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

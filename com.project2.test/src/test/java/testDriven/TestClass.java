@@ -1,4 +1,4 @@
-package com.project2.test;
+package testDriven;
 
 public class TestClass {
 
