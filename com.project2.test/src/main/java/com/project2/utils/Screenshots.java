@@ -12,8 +12,9 @@ import com.project2.core.BaseClass;
 public class Screenshots extends BaseClass{
 	
 	public void screenCapture(String screenName) throws IOException {
-		TakesScreenshot screenCap = (TakesScreenshot) drv; 
-		File scrFile = screenCap.getScreenshotAs(OutputType.FILE);
+//		TakesScreenshot screenCap = (TakesScreenshot) drv; 
+//		File scrFile = screenCap.getScreenshotAs(OutputType.FILE);
+		File scrFile = ((TakesScreenshot) drv).getScreenshotAs(OutputType.FILE);
 		FileUtils.copyFile(scrFile, new File("F:\\project2pom\\com.project2.test\\screenshots\\"+screenName+".png"));
 	}
 }

@@ -55,13 +55,7 @@ public class LoginPageTest extends BaseClass{
 		Thread.sleep(2000);
 	}
 	
-	// invocationCount
-	// Test(groups= {"SmokeTest"}) 
-	//(groups ={"smoke", "regression"})
 	
-	// (priority = 1)
-	
-	// (dependsOnMethods={"parentTest"}) 
 	
 	@AfterMethod
 	public void quit(ITestResult result) throws IOException {
@@ -74,4 +68,13 @@ public class LoginPageTest extends BaseClass{
 		}
 		drv.quit();
 	}
+	
+	
+	// invocationCount
+		// Test(groups= {"SmokeTest"}) 
+		//(groups ={"smoke", "regression"})
+		
+		// (priority = 1)
+		
+		// (dependsOnMethods={"parentTest"}) 
 }
