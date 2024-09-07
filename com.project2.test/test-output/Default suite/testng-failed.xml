@@ -3,11 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testDriven.HandleShadowDOM">
+      <class name="testDriven.LambdaTestClass3">
         <methods>
-          <include name="main"/>
+          <include name="cloudTest"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- testDriven.HandleShadowDOM -->
+      </class> <!-- testDriven.LambdaTestClass3 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

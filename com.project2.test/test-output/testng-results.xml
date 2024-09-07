@@ -1,17 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-06T19:13:22 IST" name="Default suite" finished-at="2024-09-06T19:13:36 IST" duration-ms="13305">
+  <suite started-at="2024-09-08T00:11:27 IST" name="ParallelTestSuite" finished-at="2024-09-08T00:11:48 IST" duration-ms="21251">
     <groups>
     </groups>
-    <test started-at="2024-09-06T19:13:22 IST" name="Default test" finished-at="2024-09-06T19:13:36 IST" duration-ms="13305">
-      <class name="testDriven.HandleShadowDOM">
-        <test-method signature="main()[pri:0, instance:testDriven.HandleShadowDOM@1a451d4d]" started-at="2024-09-06T19:13:22 IST" name="main" finished-at="2024-09-06T19:13:36 IST" duration-ms="13236" status="PASS">
+    <test started-at="2024-09-08T00:11:27 IST" name="TestChrome" finished-at="2024-09-08T00:11:46 IST" duration-ms="18996">
+      <class name="testDriven.LambdaTestClass3">
+        <test-method signature="cloudTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testDriven.LambdaTestClass3@158da8e]" started-at="2024-09-08T00:11:27 IST" name="cloudTest" finished-at="2024-09-08T00:11:46 IST" duration-ms="18933" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Windows 10]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[128]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- main -->
-      </class> <!-- testDriven.HandleShadowDOM -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- cloudTest -->
+      </class> <!-- testDriven.LambdaTestClass3 -->
+    </test> <!-- TestChrome -->
+    <test started-at="2024-09-08T00:11:27 IST" name="TestFirefox" finished-at="2024-09-08T00:11:48 IST" duration-ms="21251">
+      <class name="testDriven.LambdaTestClass3">
+        <test-method signature="cloudTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testDriven.LambdaTestClass3@293a5bf6]" started-at="2024-09-08T00:11:27 IST" name="cloudTest" finished-at="2024-09-08T00:11:48 IST" duration-ms="21194" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Windows 10]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[129]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cloudTest -->
+      </class> <!-- testDriven.LambdaTestClass3 -->
+    </test> <!-- TestFirefox -->
+  </suite> <!-- ParallelTestSuite -->
 </testng-results>
