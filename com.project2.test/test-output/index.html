@@ -56,7 +56,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-ParallelTestSuite" class="navigator-link ">
-                    <span class="test-stats">2 tests</span>
+                    <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,12 +104,7 @@
                     <div class="method-list-content passed suite-ParallelTestSuite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-ParallelTestSuite" title="testDriven.LambdaTestClass3" class="method navigator-link" hash-for-method="cloudTest(chrome, Windows 10, 128)">cloudTest(chrome, Windows 10, 128)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-ParallelTestSuite" title="testDriven.LambdaTestClass3" class="method navigator-link" hash-for-method="cloudTest(firefox, Windows 10, 129)">cloudTest(firefox, Windows 10, 129)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-ParallelTestSuite" title="testDriven.SeleniumGridLocal" class="method navigator-link" hash-for-method="cloudTest(firefox)">cloudTest(firefox)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-ParallelTestSuite -->
@@ -127,23 +122,15 @@
           <div class="suite-ParallelTestSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">testDriven.LambdaTestClass3</span>
+              <span class="class-name">testDriven.SeleniumGridLocal</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="cloudTest(chrome, Windows 10, 128)">
-                  </a> <!-- cloudTest(chrome, Windows 10, 128) -->
+                  <a name="cloudTest(firefox)">
+                  </a> <!-- cloudTest(firefox) -->
                   <span class="method-name">cloudTest</span>
-                  <span class="parameters">(chrome, Windows 10, 128)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="cloudTest(firefox, Windows 10, 129)">
-                  </a> <!-- cloudTest(firefox, Windows 10, 129) -->
-                  <span class="method-name">cloudTest</span>
-                  <span class="parameters">(firefox, Windows 10, 129)</span>
+                  <span class="parameters">(firefox)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -158,20 +145,10 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;ParallelTestSuite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;TestChrome&quot;&gt;
-    &lt;parameter name=&quot;browserName&quot; value=&quot;chrome&quot;/&gt;
-    &lt;parameter name=&quot;browserVer&quot; value=&quot;128&quot;/&gt;
-    &lt;parameter name=&quot;platform&quot; value=&quot;Windows 10&quot;/&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;testDriven.LambdaTestClass3&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- TestChrome --&gt;
   &lt;test thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;TestFirefox&quot;&gt;
     &lt;parameter name=&quot;browserName&quot; value=&quot;firefox&quot;/&gt;
-    &lt;parameter name=&quot;browserVer&quot; value=&quot;129&quot;/&gt;
-    &lt;parameter name=&quot;platform&quot; value=&quot;Windows 10&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;testDriven.LambdaTestClass3&quot;/&gt;
+      &lt;class name=&quot;testDriven.SeleniumGridLocal&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- TestFirefox --&gt;
 &lt;/suite&gt; &lt;!-- ParallelTestSuite --&gt;
@@ -184,9 +161,6 @@
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
-              <li>
-                <span class="test-name">TestChrome (1 class)</span>
-              </li>
               <li>
                 <span class="test-name">TestFirefox (1 class)</span>
               </li>
@@ -214,20 +188,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'cloudTest')
-data.setCell(0, 2, 'testDriven.LambdaTestClass3')
-data.setCell(0, 3, 21194);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'cloudTest')
-data.setCell(1, 2, 'testDriven.LambdaTestClass3')
-data.setCell(1, 3, 18933);
+data.setCell(0, 2, 'testDriven.SeleniumGridLocal')
+data.setCell(0, 3, 56352);
 window.suiteTableData['ParallelTestSuite']= { tableData: data, tableDiv: 'times-div-ParallelTestSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 21 seconds</span>
+              <span class="suite-total-time">Total running time: 56 seconds</span>
               <div id="times-div-ParallelTestSuite">
               </div> <!-- times-div-ParallelTestSuite -->
             </div> <!-- times-div -->
@@ -253,13 +223,9 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testDriven.LambdaTestClass3</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testDriven.SeleniumGridLocal</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">cloudTest(chrome, Windows 10, 128)</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">cloudTest(firefox, Windows 10, 129)</span>
+                <span class="method-name">cloudTest(firefox)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
