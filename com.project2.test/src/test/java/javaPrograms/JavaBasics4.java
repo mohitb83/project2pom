@@ -1,5 +1,12 @@
 package javaPrograms;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+
 public class JavaBasics4 { 
 	
 	
@@ -39,6 +46,20 @@ public class JavaBasics4 {
 		}
 		System.out.println(" ");
 		fibn3(15);
+		
+		System.out.println(" ");
+		
+		int [] array1 = {1, 2, 3, 4, 5};
+		int [] array2 = {4, 5, 6, 7, 3};
+		
+		List<Integer> common = findCommons1(array1, array2);
+		System.out.print("Common Elements are: "+ common);
+		System.out.println("+++++++++++++++++++++++++++++++++++++++++++");
+		Set<Integer> coomon2 = findCommons2(array1, array2);
+		System.out.println("Common Elems are: "+coomon2);
+		
+		System.out.println(" ");
+		System.out.println("Occurence of charaters in given String: "+countChars("Suryavansham"));
 	}
 
 // Reverse a String
@@ -240,5 +261,53 @@ public class JavaBasics4 {
 			a=b;
 			b=c;
 		}
+	}
+	
+	// finding common elements between two array
+	
+	public static List<Integer> findCommons1(int []array1, int[]array2){
+		
+		List<Integer> commonElement = new ArrayList<>();
+	
+		for (int i=0; i<array1.length; i++) {
+			for (int j=0; j< array2.length; j++){
+				if(array1[i]==array2[j] && !commonElement.contains(array1[i])) {
+					commonElement.add(array1[i]);
+				}
+			}
+		}
+	return commonElement;
+	
+	}
+	
+	// Another way of finding common elements
+	
+	public static Set<Integer> findCommons2(int [] array1, int [] array2){
+		Set<Integer> set1 = new HashSet<>();
+		Set<Integer> commonElems= new HashSet<>();
+		
+		for(int num: array1) {
+			set1.add(num);
+		}
+		
+		for (int num: array2) {
+			if (set1.contains(num)) {
+				commonElems.add(num);
+			}
+		}
+		
+		return commonElems;
+	}
+	
+	// count the number of occurrences of each character in a string
+	
+	public static Map<Character, Integer> countChars(String str){
+		if (str==null) {throw new IllegalArgumentException("String cannot be empty");}
+		
+		Map<Character, Integer> charCount = new HashMap<>();
+		for(char s: str.toCharArray() ) {
+			charCount.put(s, charCount.getOrDefault(s, 0)+1);
+		}
+		return charCount;
 	}
 }
